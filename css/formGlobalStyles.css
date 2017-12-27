@@ -1,0 +1,861 @@
+/****************************/
+/******* GLOBAL STYLES ******/
+/****************************/
+#ic_signupform_2 .elcontainer {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#ic_signupform_2 .elcontainer * {
+  text-transform: none;
+  letter-spacing: normal;
+}
+#ic_signupform_2 .elcontainer .form-header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+#ic_signupform_2 .elcontainer .formEl {
+  width: 100%;
+  margin-bottom: 1em;
+  position: relative;
+  vertical-align: top;
+  padding-right: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  right: -0.5em;
+}
+#ic_signupform_2 .elcontainer .formEl label,
+#ic_signupform_2 .elcontainer .formEl h3 {
+  display: block;
+  line-height: 1.5em;
+  vertical-align: middle;
+  font-size: inherit;
+  margin-bottom: 0;
+}
+#ic_signupform_2 .elcontainer .formEl label span.indicator.required,
+#ic_signupform_2 .elcontainer .formEl h3 span.indicator.required {
+  display: none;
+}
+#ic_signupform_2 .elcontainer .formEl.required label span.indicator.required,
+#ic_signupform_2 .elcontainer .formEl.required h3 span.indicator.required {
+  display: inline;
+  color: inherit;
+}
+#ic_signupform_2 .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
+  font-style: italic;
+}
+#ic_signupform_2 .elcontainer .formEl input[type="text"]:-moz-placeholder {
+  font-style: italic;
+}
+#ic_signupform_2 .elcontainer .formEl input[type="text"]::-moz-placeholder {
+  font-style: italic;
+}
+#ic_signupform_2 .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
+  font-style: italic;
+}
+#ic_signupform_2 .elcontainer .formEl input[type="text"],
+#ic_signupform_2 .elcontainer .formEl select {
+  display: block;
+  margin: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 3em;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0 .75em;
+}
+#ic_signupform_2 .elcontainer .formEl.fieldtype-dropdown select {
+  background-image: url("../../images/icons/select-arrow-black.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox h3 {
+  vertical-align: top;
+  margin: 0;
+}
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox .option-container {
+  padding: .5em 0;
+}
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio .option-container label,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox .option-container label {
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  position: static;
+}
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio .option-container input,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox .option-container input {
+  margin: 0 .5em 0 0;
+  font-size: inherit;
+  position: static;
+  padding: 0;
+  vertical-align: middle;
+}
+#ic_signupform_2 .elcontainer .submit-container {
+  padding: 0 .75em;
+  font-weight: normal;
+}
+#ic_signupform_2 .elcontainer .submit-container input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: normal;
+  background:#000;
+  -webkit-filter:drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+  filter:drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+}
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3 {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3 {
+  line-height: 3em;
+}
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-input input[type="text"],
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-dropdown select,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox .option-container {
+  display: inline-block;
+}
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: right;
+}
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 3em;
+}
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-input input[type="text"],
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-dropdown select,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox .option-container {
+  display: inline-block;
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-checkbox h3 {
+  display: none;
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-checkbox[dataname="listGroups"] h3 {
+  display: block;
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.fieldtype-checkbox[dataname="listGroups"].required:before {
+  content: "";
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.required:before {
+  content: "*";
+  position: absolute;
+  margin-top: -0.5em;
+  right: 0;
+  margin-right: 1.25em;
+  font-size: 1.5em;
+  top: 50%;
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.required.fieldtype-dropdown:before {
+  margin-right: 2em;
+}
+#ic_signupform_2 .elcontainer.hidden-label .formEl.required.fieldtype-checkbox:before,
+#ic_signupform_2 .elcontainer.hidden-label .formEl.required.fieldtype-radio:before {
+  position: static;
+  display: inline-block;
+  margin: 0 0 -1em 0;
+}
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field) {
+  padding-right: .5em;
+  margin-bottom: .5em;
+  right: -0.25em;
+}
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field) label {
+  line-height: 1.25em;
+}
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox h3 {
+  line-height: 1.25em;
+}
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox .option-container {
+  padding: .25em 0;
+}
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio .option-container label,
+#ic_signupform_2 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox .option-container label {
+  line-height: 1.5em;
+}
+
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 2em;
+}
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+  padding-right: .5em;
+}
+#ic_signupform_2 .elcontainer.tight .submit-container {
+  padding-top: .5em;
+}
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field) {
+  padding-right: 1.5em;
+  margin-bottom: 1.5em;
+  right: -0.75em;
+}
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field) label {
+  line-height: 2em;
+}
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-checkbox h3 {
+  line-height: 2em;
+}
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-radio .option-container label,
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-checkbox .option-container label {
+  line-height: 3em;
+}
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field) input[type="text"],
+#ic_signupform_2 .elcontainer.generous .formEl:not(.hidden-field) select {
+  height: 4em;
+  padding: 0 1em;
+}
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 4em;
+}
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+  padding-right: 1.5em;
+}
+#ic_signupform_2 .elcontainer.generous .submit-container {
+  padding-top: 1.5em;
+}
+
+#ic_signupform_2 .ic_captcha .g-recaptcha>div{margin:5px auto;}
+#ic_signupform_2 .elcontainer {
+   background: transparent;
+   text-align: left;
+   max-width: 100%;
+   padding: 10px 10px;
+   border-radius: 0px;
+   border: none;
+   font-size: 12px;
+   color: #226699;
+   font-family: arial;
+}
+
+#ic_signupform_2 .elcontainer.center-aligned .formEl { 
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+#ic_signupform_2 .elcontainer.right-aligned .formEl { 
+	margin-left: auto; 
+}
+
+#ic_signupform_2 .form-header {
+   
+      display: none;
+   
+   background: #ffffff;
+   margin-top: -10px;
+   margin-left: -10px;
+   margin-right: -10px;
+   margin-bottom: 10px; /* using padding on purpose */
+   padding-top: 20px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   border-radius: calc(0px - 1px) calc(0px - 1px) 0 0;
+   text-align: center;
+   font-size: 150%;
+   color: #333333;
+   border-bottom: 1px solid #dddddd;
+}
+
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+   width: 30%;
+}
+	   
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 3em; 
+}
+
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 2em; 
+}
+
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 4em; 
+}
+
+#ic_signupform_2 .elcontainer.inline-label-left .formEl input[type="text"],
+#ic_signupform_2 .elcontainer.inline-label-left .formEl select,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer.inline-label-left .formEl.fieldtype-checkbox .option-container,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl input[type="text"],
+#ic_signupform_2 .elcontainer.inline-label-right .formEl select,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-radio .option-container,
+#ic_signupform_2 .elcontainer.inline-label-right .formEl.fieldtype-checkbox .option-container {
+   width: 100%;
+}
+
+#ic_signupform_2 .elcontainer.hidden-label .formEl.required:before {
+   color: #000000;
+}
+	   
+#ic_signupform_2 .elcontainer .formEl {
+   font-size: 1em;
+}
+
+#ic_signupform_2 .elcontainer .formEl.fieldtype-input label,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-dropdown label,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio h3,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox h3 {
+   font-size: 100%;
+   font-weight: bold;
+   color: #226699;
+}
+
+#ic_signupform_2 .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform_2 .elcontainer .formEl.fieldtype-dropdown select {
+   background-color: #ffffff;
+}
+	   
+#ic_signupform_2 .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform_2 .elcontainer .formEl.fieldtype-dropdown select,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-radio label,
+#ic_signupform_2 .elcontainer .formEl.fieldtype-checkbox label {
+   font-size: 100%;
+}
+
+#ic_signupform_2 .elcontainer .formEl input[type="text"]::-moz-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_2 .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_2 .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_2 .elcontainer .formEl input[type="text"],
+#ic_signupform_2 .elcontainer .formEl select,
+#ic_signupform_2 .elcontainer .formEl .option-container label {
+   color: #000000;
+   font-family: inherit;
+}
+	   
+#ic_signupform_2 .elcontainer.inline-button .submit-container {
+	display: inline-block;
+	box-sizing: border-box;
+	right: -.5em;
+	padding: 0 1em 0 0;
+	position: relative;
+	vertical-align: bottom;
+	margin-bottom: 1em;
+}
+	
+#ic_signupform_2 .elcontainer.inline-button.tight .sortables {
+	margin-bottom: -.5em;
+}
+	
+#ic_signupform_2 .elcontainer.inline-button .sortables {
+	margin-bottom: -1em;
+}
+	
+#ic_signupform_2 .elcontainer.inline-button.generous .sortables {
+	margin-bottom: -1.5em;
+}
+
+#ic_signupform_2 .elcontainer .submit-container {
+   text-align: center;
+}
+
+/****************************/
+/******* GLOBAL STYLES Footer Form******/
+/****************************/
+#ic_signupform_3 .elcontainer {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#ic_signupform_3 .elcontainer * {
+  text-transform: none;
+  letter-spacing: normal;
+}
+#ic_signupform_3 .elcontainer .form-header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+#ic_signupform_3 .elcontainer .formEl {
+  width: 100%;
+  margin-bottom: 1em;
+  position: relative;
+  vertical-align: top;
+  padding-right: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  right: -0.5em;
+}
+#ic_signupform_3 .elcontainer .formEl label,
+#ic_signupform_3 .elcontainer .formEl h3 {
+  display: block;
+  line-height: 1.5em;
+  vertical-align: middle;
+  font-size: inherit;
+  margin-bottom: 0;
+}
+#ic_signupform_3 .elcontainer .formEl label span.indicator.required,
+#ic_signupform_3 .elcontainer .formEl h3 span.indicator.required {
+  display: none;
+}
+#ic_signupform_3 .elcontainer .formEl.required label span.indicator.required,
+#ic_signupform_3 .elcontainer .formEl.required h3 span.indicator.required {
+  display: inline;
+  color: inherit;
+}
+#ic_signupform_3 .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
+  font-style: italic;
+}
+#ic_signupform_3 .elcontainer .formEl input[type="text"]:-moz-placeholder {
+  font-style: italic;
+}
+#ic_signupform_3 .elcontainer .formEl input[type="text"]::-moz-placeholder {
+  font-style: italic;
+}
+#ic_signupform_3 .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
+  font-style: italic;
+}
+#ic_signupform_3 .elcontainer .formEl input[type="text"],
+#ic_signupform_3 .elcontainer .formEl select {
+  display: block;
+  margin: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 3em;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0 .75em;
+}
+#ic_signupform_3 .elcontainer .formEl.fieldtype-dropdown select {
+  background-image: url("../../images/icons/select-arrow-black.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox h3 {
+  vertical-align: top;
+  margin: 0;
+}
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox .option-container {
+  padding: .5em 0;
+}
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio .option-container label,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox .option-container label {
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  position: static;
+}
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio .option-container input,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox .option-container input {
+  margin: 0 .5em 0 0;
+  font-size: inherit;
+  position: static;
+  padding: 0;
+  vertical-align: middle;
+}
+#ic_signupform_3 .elcontainer .submit-container {
+  padding: 0 .75em;
+  font-weight: normal;
+}
+#ic_signupform_3 .elcontainer .submit-container input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: normal;
+  -webkit-filter:drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+  filter:drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+}
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3 {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3 {
+  line-height: 3em;
+}
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-input input[type="text"],
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-dropdown select,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox .option-container {
+  display: inline-block;
+}
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: right;
+}
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 3em;
+}
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-input input[type="text"],
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-dropdown select,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox .option-container {
+  display: inline-block;
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-checkbox h3 {
+  display: none;
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-checkbox[dataname="listGroups"] h3 {
+  display: block;
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.fieldtype-checkbox[dataname="listGroups"].required:before {
+  content: "";
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.required:before {
+  content: "*";
+  position: absolute;
+  margin-top: -0.5em;
+  right: 0;
+  margin-right: 1.25em;
+  font-size: 1.5em;
+  top: 50%;
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.required.fieldtype-dropdown:before {
+  margin-right: 2em;
+}
+#ic_signupform_3 .elcontainer.hidden-label .formEl.required.fieldtype-checkbox:before,
+#ic_signupform_3 .elcontainer.hidden-label .formEl.required.fieldtype-radio:before {
+  position: static;
+  display: inline-block;
+  margin: 0 0 -1em 0;
+}
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field) {
+  padding-right: .5em;
+  margin-bottom: .5em;
+  right: -0.25em;
+}
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field) label {
+  line-height: 1.25em;
+}
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox h3 {
+  line-height: 1.25em;
+}
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox .option-container {
+  padding: .25em 0;
+}
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-radio .option-container label,
+#ic_signupform_3 .elcontainer.tight .formEl:not(.hidden-field).fieldtype-checkbox .option-container label {
+  line-height: 1.5em;
+}
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 2em;
+}
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+  padding-right: .5em;
+}
+#ic_signupform_3 .elcontainer.tight .submit-container {
+  padding-top: .5em;
+}
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field) {
+  padding-right: 1.5em;
+  margin-bottom: 1.5em;
+  right: -0.75em;
+}
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field) label {
+  line-height: 2em;
+}
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-checkbox h3 {
+  line-height: 2em;
+}
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-radio .option-container label,
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field).fieldtype-checkbox .option-container label {
+  line-height: 3em;
+}
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field) input[type="text"],
+#ic_signupform_3 .elcontainer.generous .formEl:not(.hidden-field) select {
+  height: 4em;
+  padding: 0 1em;
+}
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+  line-height: 4em;
+}
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+  padding-right: 1.5em;
+}
+#ic_signupform_3 .elcontainer.generous .submit-container {
+  padding-top: 1.5em;
+}
+
+#ic_signupform_3 .ic_captcha .g-recaptcha>div{margin:5px auto;}
+#ic_signupform_3 .elcontainer {
+   background: transparent;
+   text-align: left;
+   max-width: 100%;
+   padding: 10px 0px;
+   border-radius: 0px;
+   border: none;
+   font-size: 12px;
+   color: #226699;
+   font-family: arial;
+}
+
+#ic_signupform_3 .elcontainer.center-aligned .formEl { 
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+#ic_signupform_3 .elcontainer.right-aligned .formEl { 
+	margin-left: auto; 
+}
+
+#ic_signupform_3 .form-header {
+   
+      display: none;
+   
+   background: #ffffff;
+   margin-top: -10px;
+   margin-left: -10px;
+   margin-right: -10px;
+   margin-bottom: 10px; /* using padding on purpose */
+   padding-top: 20px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   border-radius: calc(0px - 1px) calc(0px - 1px) 0 0;
+   text-align: center;
+   font-size: 150%;
+   color: #333333;
+   border-bottom: 1px solid #dddddd;
+}
+
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+   width: 30%;
+}
+	   
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 3em; 
+}
+
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.tight.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 2em; 
+}
+
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-left .formEl.fieldtype-checkbox h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer.generous.inline-label-right .formEl.fieldtype-checkbox h3 {
+   line-height: 4em; 
+}
+
+#ic_signupform_3 .elcontainer.inline-label-left .formEl input[type="text"],
+#ic_signupform_3 .elcontainer.inline-label-left .formEl select,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer.inline-label-left .formEl.fieldtype-checkbox .option-container,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl input[type="text"],
+#ic_signupform_3 .elcontainer.inline-label-right .formEl select,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-radio .option-container,
+#ic_signupform_3 .elcontainer.inline-label-right .formEl.fieldtype-checkbox .option-container {
+   width: 75%;
+}
+
+#ic_signupform_3 .elcontainer.hidden-label .formEl.required:before {
+   color: #000000;
+}
+	   
+#ic_signupform_3 .elcontainer .formEl {
+   font-size: 1em;
+}
+
+#ic_signupform_3 .elcontainer .formEl.fieldtype-input label,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-dropdown label,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio h3,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox h3 {
+   font-size: 100%;
+   font-weight: bold;
+   color: #226699;
+}
+
+#ic_signupform_3 .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform_3 .elcontainer .formEl.fieldtype-dropdown select {
+   background-color: #ffffff;
+}
+	   
+#ic_signupform_3 .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform_3 .elcontainer .formEl.fieldtype-dropdown select,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-radio label,
+#ic_signupform_3 .elcontainer .formEl.fieldtype-checkbox label {
+   font-size: 100%;
+}
+
+#ic_signupform_3 .elcontainer .formEl input[type="text"]::-moz-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_3 .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_3 .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
+   color: #bdbdbf;
+   font-family: inherit;
+}
+
+#ic_signupform_3 .elcontainer .formEl input[type="text"],
+#ic_signupform_3 .elcontainer .formEl select,
+#ic_signupform_3 .elcontainer .formEl .option-container label {
+   color: #000000;
+   font-family: inherit;
+}
+	   
+#ic_signupform_3 .elcontainer.inline-button .submit-container {
+	display: inline-block;
+	box-sizing: border-box;
+	right: -.5em;
+	padding: 0 1em 0 0;
+	position: relative;
+	vertical-align: bottom;
+	margin-bottom: 1em;
+}
+	
+#ic_signupform_3 .elcontainer.inline-button.tight .sortables {
+	margin-bottom: -.5em;
+}
+	
+#ic_signupform_3 .elcontainer.inline-button .sortables {
+	margin-bottom: -1em;
+}
+	
+#ic_signupform_3 .elcontainer.inline-button.generous .sortables {
+	margin-bottom: -1.5em;
+}
+
+#ic_signupform_3 .elcontainer .submit-container {
+   text-align: center;
+}
